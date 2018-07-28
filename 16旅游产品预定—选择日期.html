@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16旅游产品预定—选择日期</title>
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/calendar-pro.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/zjm.css">
+
+</head>
+
+<body class=" c3 bgf5 pb120">
+    <div class="z-placeHead">
+        <div class="z-head">
+            <i class="backIcon"></i>
+            <span class="f38 cf flex-1 tc">选择日期和人数</span>
+
+        </div>
+    </div>
+    <div class=" pt100">
+        <div class="calendar-box demo-box"></div>
+        <div class=" bgf mt20 bdb z-normalTitle">
+            请选择团期和人数
+        </div>
+        <ul class="normalUl">
+            <li class="bdb">
+                <span class="f30 flex-1">
+                    成人
+                    <em class="c6 f26">1.5米(含)以上</em>
+                </span>
+                <div class="flex flex-align-center">
+                    <span class="clorange f26 mr10">单价￥698</span>
+                    <div class="flex flex-align-center">
+                        <span class="z-realseNumber">-</span>
+                        <input type="number" class="z-numberInput">
+                        <span class="z-addNumber">+</span>
+                    </div>
+                </div>
+            </li>
+            <li class="bdb">
+                <span class="f30 flex-1">
+                    儿童
+                    <em class="c6 f26">1米(不含)-1.5米以上</em>
+                </span>
+                <div class="flex flex-align-center">
+                    <span class="clorange f26 mr10">单价￥698</span>
+                    <div class="flex flex-align-center">
+                        <span class="z-realseNumber">-</span>
+                        <input type="number" class="z-numberInput">
+                        <span class="z-addNumber">+</span>
+                    </div>
+                </div>
+            </li>
+            <li class="bdb">
+                <span class="f30 flex-1">
+                    <em class="clorange">*</em> 婴儿
+                    <em class="c6 f26">1米(含)以下免费</em>
+                </span>
+
+            </li>
+        </ul>
+    </div>
+    <div class="z-footer">
+        <ul class="z-placeUl z-choiceDate">
+            <li>
+                <div>
+                    <p class="pt10 f30">
+                        <span >
+                            总额：
+                        </span>
+                        <span class="clorange">
+                            <em class="f24">
+                                ￥
+                            </em>
+                            <em>
+                                1096
+                            </em>
+                        </span>
+                    </p>
+                </div>
+            </li>
+            <li class="cur">
+                <div>
+                    <p class="pt10 f30">
+                        明细
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <i class="footerIcon serviceIcon"></i>
+                    <p class="pt10">
+                        客服
+                    </p>
+                </div>
+            </li>
+            <li onclick="getSome()">
+                <div class="goToOrder">
+                    <p>下一步</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/calendar-pro.js"></script>
+<script src="js/js.js"></script>
+<script>
+    $('.calendar-box').calendar({
+        ele : '.demo-box', //依附
+        title : '',
+        beginDate : '2018-06-09',
+//	endDate : '2017-07-04',
+        data : [
+            {date:'2018-07-07',data:'107'},
+            {date:'2018-07-08',data:'108'},
+            {date:'2018-07-09',data:'109'},
+            {date:'2018-07-10',data:'110'},
+            {date:'2018-07-11',data:'111'},
+            {date:'2018-07-12',data:'112'},
+            {date:'2018-07-13',data:'113'},
+		    {date:'2017-07-14',data:'114'},
+            {date:'2018-07-15',data:'115'},
+            {date:'2018-07-16',data:'116'},
+            {date:'2018-07-17',data:'117'},
+            {date:'2018-07-18',data:'118'},
+            {date:'2018-07-19',data:'119'},
+            {date:'2018-07-20',data:'120'},
+            {date:'2018-07-21',data:'121'},
+            {date:'2018-07-22',data:'122'},
+            {date:'2018-07-23',data:'123'},
+            {date:'2017-05-24',data:'124'},
+            {date:'2017-05-25',data:'125'},
+            {date:'2017-05-26',data:'126'},
+            {date:'2017-05-27',data:'127'},
+            {date:'2017-05-28',data:'128'},
+            {date:'2017-05-29',data:'129'},
+		    {date:'2017-05-30',data:'130'},
+            {date:'2017-05-31',data:'131'},
+            {date:'2017-06-01',data:'101'},
+            {date:'2017-06-02',data:'102'},
+            {date:'2017-06-03',data:'103'},
+            {date:'2017-06-04',data:'104'},
+            {date:'2017-06-05',data:'105'},
+            {date:'2017-06-06',data:'106'},
+            {date:'2017-06-07',data:'107'},
+            {date:'2017-06-08',data:'108'},
+            {date:'2017-06-09',data:'109'},
+            {date:'2017-06-10',data:'110'},
+            {date:'2017-06-11',data:'111'},
+//		{date:'2017-06-12',data:'112'},
+            {date:'2017-06-13',data:'113'},
+            {date:'2017-06-14',data:'114'},
+            {date:'2017-06-15',data:'115'},
+            {date:'2017-06-16',data:'116'},
+            {date:'2017-06-17',data:'117'},
+            {date:'2017-06-18',data:'118'},
+            {date:'2017-06-19',data:'119'},
+            {date:'2017-06-20',data:'120'},
+            {date:'2017-06-21',data:'121'},
+            {date:'2017-06-22',data:'122'},
+            {date:'2017-06-23',data:'123'},
+            {date:'2017-06-24',data:'124'},
+//		{date:'2017-06-25',data:'125'},
+            {date:'2017-06-26',data:'126'},
+            {date:'2017-06-27',data:'127'},
+            {date:'2017-06-28',data:'128'},
+            {date:'2017-06-29',data:'129'},
+            {date:'2017-06-30',data:'130'},
+            {date:'2017-07-01',data:'121'},
+            {date:'2017-07-02',data:'122'},
+            {date:'2017-07-03',data:'123'},
+            {date:'2017-07-04',data:'124'},
+        ]
+    });
+    function getSome(){
+        var data = $('.calendar-box').calendarGetActive();
+        console.log(data);
+
+    }
+</script>
+</html>

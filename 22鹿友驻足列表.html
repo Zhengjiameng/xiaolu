@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22鹿友驻足列表</title>
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/zjm.css">
+
+</head>
+
+<body class=" c3 bgf5">
+    <div class="z-head">
+        <i class="backIcon"></i>
+        <span class="f32 cf flex-1 tc">鹿友驻足</span>
+    </div>
+    <div class="">
+        <ul class="travelUl bgf">
+            <li class="cur">
+                推荐
+            </li>
+            <li>
+                最新
+            </li>
+            <li>
+                热门
+            </li>
+            <li>
+                六月去哪儿
+            </li>
+        </ul>
+        <div class="mt20 pl3 pr3 bgf pt20">
+            <ul>
+                <li>
+                    <div class="pb20">
+                        <div class="relative">
+                            <img src="images/exzample07.png" alt="" width="100%">
+                        </div>
+                        <p class="pt20 f30 ">
+                            在康定
+                        </p>
+                        <p class="pt20 f28 c6">
+                            长沙橘子洲头+九州龙骧豪华游船+韶山+张家界天门山+大峡谷  云天渡玻璃桥+凤凰古城五日游+芙蓉镇三....
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pb20">
+                        <div class="relative">
+                            <img src="images/exzample07.png" alt="" width="100%">
+                        </div>
+                        <p class="pt20 f30 ">
+                            在康定
+                        </p>
+                        <p class="pt20 f28 c6">
+                            长沙橘子洲头+九州龙骧豪华游船+韶山+张家界天门山+大峡谷  云天渡玻璃桥+凤凰古城五日游+芙蓉镇三....
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pb20">
+                        <div class="relative">
+                            <img src="images/exzample07.png" alt="" width="100%">
+                        </div>
+                        <p class="pt20 f30 ">
+                            在康定
+                        </p>
+                        <p class="pt20 f28 c6">
+                            长沙橘子洲头+九州龙骧豪华游船+韶山+张家界天门山+大峡谷  云天渡玻璃桥+凤凰古城五日游+芙蓉镇三....
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pl3 pr3 pt20 z-content clr bgf mt20">
+
+            <ul class="friendList clr">
+                <li class="">
+                    <div class="productSubContent">
+                        <img src="images/exzample06.png" alt="" width="100%">
+                        <i class="bestTag"><em>精选1</em></i>
+                        <div class="f28 pl3 pr3">
+                            <p class="pt20">
+                               在三亚
+
+                            </p>
+                            <p class="pt20 f28 c6 pb20">
+                                三亚是具有热带海滨风景
+                                特色的国际旅游城市...
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="productSubContent">
+                        <img src="images/exzample06.png" alt="" width="100%">
+                        <i class="bestTag"><em>精选1</em></i>
+                        <div class="f28 pl3 pr3">
+                            <p class="pt20">
+                                在三亚
+
+                            </p>
+                            <p class="pt20 f28 c6 pb20">
+                                三亚是具有热带海滨风景
+                                特色的国际旅游城市...
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <p class="tc z-loading">
+            <span class="k-ring-1"></span>
+            <span class="f30 cc ml10">
+                    正在加载
+                </span>
+        </p>
+    </div>
+
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/js.js"></script>
+<script>
+    var timeoutId
+    var html='<li class="">\n' +
+        '                    <div class="productSubContent">\n' +
+        '                        <img src="images/exzample06.png" alt="" width="100%">\n' +
+        '                        <i class="bestTag"><em>精选1</em></i>\n' +
+        '                        <div class="f28 pl3 pr3">\n' +
+        '                            <p class="pt20">\n' +
+        '                               在三亚\n' +
+        '\n' +
+        '                            </p>\n' +
+        '                            <p class="pt20 f28 c6 pb20">\n' +
+        '                                三亚是具有热带海滨风景\n' +
+        '                                特色的国际旅游城市...\n' +
+        '                            </p>\n' +
+        '                        </div>\n' +
+        '                    </div>\n' +
+        '                </li>';
+    $(window).scroll(function(){
+        if(timeoutId){
+            clearTimeout(timeoutId)
+        }
+        timeoutId=setTimeout(callback(html),50)
+    })
+</script>
+
+</html>

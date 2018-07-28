@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>18旅游产品预订—订单—选择出行人</title>
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/zjm.css">
+
+</head>
+
+<body class=" c3 bgf5">
+    <div class="z-head">
+        <i class="backIcon"></i>
+        <span class="f38 cf flex-1 tc">
+            选择出行人
+        </span>
+        <a href="javascript:;" class="f28 cf manageGoOut" >管理</a>
+    </div>
+
+
+    <ul class="z-payList mb20">
+        <li>
+            <input type="checkbox" class="z-rectCheck mr20 disnone">
+            <span>张若雨</span>
+            <span class="flex-1 tr">13024569874</span>
+
+        </li>
+        <li>
+            <input type="checkbox" class="z-rectCheck mr20 disnone">
+            <span>张若雨</span>
+            <span class="flex-1 tr">13024569874</span>
+        </li>
+        <li>
+            <input type="checkbox" class="z-rectCheck mr20 disnone">
+            <span>张若雨</span>
+            <span class="flex-1 tr">13024569874</span>
+        </li>
+        <li>
+            <input type="checkbox" class="z-rectCheck mr20 disnone">
+            <span>张若雨</span>
+            <span class="flex-1 tr">13024569874</span>
+        </li>
+    </ul>
+    <a href="" class="goToPay bgorange">确定</a>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper-4.2.6.min.js"></script>
+<script src="js/js.js"></script>
+<script>
+    $(function () {
+        $('.manageGoOut').click(function () {
+            $('.z-rectCheck').each(function () {
+                if($(this).hasClass('disnone')){
+                    $(this).removeClass('disnone');
+                }else{
+                    $(this).addClass('disnone');
+                    $(this).prop('checked',false);
+                }
+
+            })
+
+
+        })
+    })
+</script>
+</html>
